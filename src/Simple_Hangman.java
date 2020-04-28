@@ -80,7 +80,7 @@ public class Simple_Hangman {
         Scanner in = new Scanner(System.in);
         Random run = new Random();
 
-        randomNumber = run.nextInt(words.size() - 1);
+        randomNumber = run.nextInt(words.size());
 
         // set the size of the array based on the word selected by random number.
         correct = new String [words.get(randomNumber).length()];
